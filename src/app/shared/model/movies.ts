@@ -23,5 +23,6 @@ export interface ItrandingMovieRes {
     vote_count: number;
     original_name ?: string;
     name ? : string
+    email ? : string
   }
   
