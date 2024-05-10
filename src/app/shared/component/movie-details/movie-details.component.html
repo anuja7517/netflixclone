@@ -1,10 +1,10 @@
 <div class="moviDetails" *ngIf="movieObj">
     <div class="heroImg" >
     <!-- [style.backgroundImage]="'Url(' + backgroundImage + ')'" -->
-  >
-    <img src="https://image.tmdb.org/t/p/original/{{movieObj.backdrop_path}}" alt="">  
+  
+    <img src="https://image.tmdb.org/t/p/original/{{movieObj.backdrop_path}}" alt="" class="movieimg">  </div>
  <div class="container-fluid">
-    <div class="row">
+    <div class="row ">
         <div class="col-md-5">
         <div class="movieInfoCaption">
             <img src="https://image.tmdb.org/t/p/original/{{movieObj.production_companies[0].logo_path}}" alt="" class="movieProdLogo">
@@ -32,7 +32,7 @@
  </div>
         <!-- <img src="https://image.tmdb.org/t/p/original/{{movieObj.backdrop_path}}" alt="">  -->
 
-    </div>
+    
     <!-- <div class="heroimg"
     [style.backgroundImage]="linear-gradient()'Url('+ backgroundImage +')'"
     >

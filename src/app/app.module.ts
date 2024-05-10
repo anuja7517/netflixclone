@@ -8,14 +8,16 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import{HttpClientModule}from '@angular/common/http';
 import { HomeComponent } from './shared/component/home/home.component';
 import { MainSliderComponent } from './shared/component/main-slider/main-slider.component';
-import { MovieDetailsComponent } from './shared/component/movie-details/movie-details.component'
+import { MovieDetailsComponent } from './shared/component/movie-details/movie-details.component';
+import { SingleMovieComponent } from './shared/component/single-movie/single-movie.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MainSliderComponent,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    SingleMovieComponent
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './shared/component/home/home.component';
 import { MovieDetailsComponent } from './shared/component/movie-details/movie-details.component';
+import { SingleMovieComponent } from './shared/component/single-movie/single-movie.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path : 'moviedetails/:movieId',
     component: MovieDetailsComponent
+  },
+  {
+    path :'singlemovie/:movieId',
+    component : SingleMovieComponent
   }
 ];
 
