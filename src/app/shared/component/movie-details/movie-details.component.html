@@ -1,0 +1,40 @@
+<div class="moviDetails" *ngIf="movieObj">
+    <div class="heroImg" 
+    [style.backgroundImage]="'Url(' + backgroundImage + ')'"
+   >
+ <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-5">
+        <div class="movieInfoCaption">
+            <img src="https://image.tmdb.org/t/p/original/{{movieObj.production_companies[0].logo_path}}" alt="" class="movieProdLogo">
+            <h3 class="movieTitle">
+                {{movieObj.title ?? movieObj.original_title}}
+            </h3>
+            <ul class="releseDetails text-white">
+                <li>
+                    {{movieObj.release_date}} </li>
+                 <li>  {{movieObj.adult ? "A" : 'U'}} </li> 
+                  <li>  {{movieObj.runtime}} </li>
+                  <li>{{getGeners(movieObj.genres)}}</li>
+                   
+            </ul>
+            <p class="overview text-white">
+                {{movieObj.overview}}
+            </p>
+            <p class="staring">
+                Starring: 
+            </p>
+        </div>
+    
+        </div>
+       </div>
+ </div>
+        <!-- <img src="https://image.tmdb.org/t/p/original/{{movieObj.backdrop_path}}" alt="">  -->
+
+    </div>
+    <!-- <div class="heroimg"
+    [style.backgroundImage]="'Url('+ backgroundImage +')'"
+    >
+        
+    </div> -->
+</div>

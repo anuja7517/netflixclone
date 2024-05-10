@@ -1,0 +1,55 @@
+::ng-deep{
+    .mainslider{
+        .owl-carousel {
+            .owl-item img{
+                height: 100vh;
+                // border: 5px solid pink;
+                object-fit: cover;
+            }
+           
+
+            .owl-prev, 
+            .owl-next{
+                position: absolute;
+                top: 50%;
+                background-color: transparent !important;
+                color: #e50914 !important;
+                font-size: 32px;
+            }
+            .owl-prev{
+                left: 3%;
+            }
+            .owl-next{
+                right: 3%;
+            }
+       
+        }
+        .movie-caption{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%;
+            background-image: linear-gradient(90deg, #181818 10%, hsla(0, 0%, 9%, .98) 20%, hsla(0, 0%, 9%, .97) 25%, hsla(0, 0%, 9%, .95) 35%, hsla(0, 0%, 9%, .94) 40%, hsla(0, 0%, 9%, .92) 45%, hsla(0, 0%, 9%, .9) 50%, hsla(0, 0%, 9%, .87) 55%, hsla(0, 0%, 9%, .82) 60%, hsla(0, 0%, 9%, .75) 65%, hsla(0, 0%, 9%, .63) 70%, hsla(0, 0%, 9%, .45) 75%, hsla(0, 0%, 9%, .27) 80%, hsla(0, 0%, 9%, .15) 85%, hsla(0, 0%, 9%, .08) 90%, hsla(0, 0%, 9%, .03) 95%, hsla(0, 0%, 9%, 0));
+            padding: 75px 0 0 40px;
+            line-height: 1.5;
+            
+            h3{
+                font-size: 64px !important;
+                color: #fff;
+                margin-bottom: 50px;
+                   line-height: 1.5;
+               
+            }
+            p{
+                color: #fff;
+                font-size: 24px;
+                   line-height: 1.5;
+              
+            }
+        }
+    }
+}
