@@ -25,8 +25,7 @@ private _http  = inject(HttpClient);
   }
 
   fetchMovieInfo(id:string):Observable<any>{
-    let movieUrl = `${this.BASE_URL}/movie/${id}credits?api_key=${this.API_KEY}`
+    let movieUrl = `${this.BASE_URL}/movie/${id} credits?api_key=${this.API_KEY}`
     return this._http.get<any>(movieUrl)
-    
   }
 }
